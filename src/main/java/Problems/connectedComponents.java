@@ -3,7 +3,7 @@ package Problems;
 import java.util.HashSet;
 import java.util.Set;
 
-public class connectedComponents {
+public class ConnectedComponents {
 
     public static void main(String [] args){
         int res= countConn(5,new int[][]{{0,1},{1,2},{3,4}});

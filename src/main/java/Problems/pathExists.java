@@ -3,7 +3,7 @@ package Problems;
 import java.util.ArrayList;
 import java.util.List;
 
-public class pathExists {
+public class PathExists {
 
 public static void main(String [] args){
    boolean res= findPath(4,new int[][]{{0,1},{0,2},{1,3},{3,4}},0,4);

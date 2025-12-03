@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-public class detectCycle {
+public class DetectCycle {
     public static void main(String [] args){
         boolean res= cycle(3,new int[][]{{0,1},{1,2},{2,0}});
         System.out.println(res);
@@ -23,14 +23,10 @@ public class detectCycle {
         }
         for(int i=0;i<n;i++){
             if(!visited[i] && dfs(visited,path,i,adjList)){
-
-
-            }
-
+                return  true;
+              }
         }
-
-
-
+        return false;
 }
 
     private static boolean dfs(boolean[] visited, boolean[] path, int i, List<List<Integer>> adjList) {
@@ -44,8 +40,8 @@ public class detectCycle {
             if(!visited[next] && dfs(visited,path,next,adjList)){
                 return  true;
             }
-
-
         }
+        path[i]=false;
+        return false;
     }
     }
